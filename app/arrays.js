@@ -30,7 +30,15 @@ exports.arraysAnswers = {
     },
 
     removeWithoutCopy: function(arr, item) {
-
+      var len = arr.length;
+      for (var i = 0; i < len; i++) {
+        if(arr[i] === item) {
+          arr.splice(i, 1);
+          len = len - 1;
+          i = i - 1;
+        }
+      }
+      return arr;
     },
 
     append: function(arr, item) {
