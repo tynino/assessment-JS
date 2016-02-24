@@ -81,7 +81,21 @@ exports.arraysAnswers = {
     },
 
     duplicates: function(arr) {
-
+      var dictionary = {};
+      var duplicates = [];
+      for (var i = 0; i < arr.length; i++) {
+        if(!dictionary[arr[i]]){
+          dictionary[arr[i]] = 1;
+        } else {
+          dictionary[arr[i]] += 1;
+        }
+      }
+      for (var keys in dictionary) {
+        if(dictionary[keys] > 1){
+          duplicates.push(keys);
+        }
+      }
+      return duplicates;
     },
 
     square: function(arr) {
