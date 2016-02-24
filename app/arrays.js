@@ -99,7 +99,11 @@ exports.arraysAnswers = {
     },
 
     square: function(arr) {
-
+      var results = [];
+      for (var i = 0; i < arr.length; i++) {
+        results.push(arr[i] * arr[i]);
+      }
+      return results;
     },
 
     findAllOccurrences: function(arr, target) {
