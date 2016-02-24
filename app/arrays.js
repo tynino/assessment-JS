@@ -52,11 +52,12 @@ exports.arraysAnswers = {
     },
 
     prepend: function(arr, item) {
-
+      arr.unshift(item);
+      return arr;
     },
 
     curtail: function(arr) {
-
+      
     },
 
     concat: function(arr1, arr2) {
