@@ -28,7 +28,7 @@ describe('async behavior', function() {
     expect(flag).to.eql(false);
   });
 
-  xit('you should be able to retrieve data from the server and return a sorted array of names', function(done) {
+  it('you should be able to retrieve data from the server and return a sorted array of names', function(done) {
     var url = '/data/testdata.json';
 
     asyncAnswers.manipulateRemoteData(url).then(function(result) {
