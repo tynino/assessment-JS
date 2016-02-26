@@ -17,16 +17,16 @@ exports.bestPracticesAnswers = {
 
   functions : function(flag) {
     if (flag) {
-      getValue = function () { return 'a'; }
+      getValue = function () { return 'a'; };
     } else {
-      getValue = function () { return 'b'; }
+      getValue = function () { return 'b'; };
     }
 
     return getValue();
   },
 
   parseInt : function(num) {
-    return parseInt(num);
+    return parseInt(num, 10);
   },
 
   identity : function(val1, val2) {
